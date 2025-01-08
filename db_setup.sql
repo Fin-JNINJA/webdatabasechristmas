@@ -97,6 +97,12 @@ CREATE TABLE Hobby(
     PRIMARY KEY (HOBBY_CODE)
 );
 
+INSERT INTO HOBBY VALUES(
+    (1,"Football", "", "Sports"),
+    (2, "Yoga", "", "Fitness"),
+    (3, "Mountain climbing", "", "Outdoor")
+)
+
 CREATE TABLE Stu_Hobby(
     PRIMARY KEY (URN, HOBBY_CODE),
     FOREIGN KEY (URN) REFERENCES Student(URN),
