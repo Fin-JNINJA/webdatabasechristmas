@@ -89,9 +89,16 @@ ON DELETE CASCADE);
 -- Please add your table definitions below this line.......
 
 
-CREATE TABLE HOBBY(
+CREATE TABLE Hobby(
     HOBBY_CODE INT UNSIGNED NOT NULL,
     Hobby_Name VARCHAR(255) NOT NULL,
     Hobby_Description VARCHAR(512) NOT NULL,
-    Hobby_Catagory VARCHAR(20)
-)
+    Hobby_Catagory VARCHAR(20),
+    PRIMARY KEY (HOBBY_CODE)
+);
+
+CREATE TABLE Stu_Hobby(
+    PRIMARY KEY (URN, HOBBY_CODE),
+    FOREIGN KEY (URN) REFERENCES Student(URN),
+    FOREIGN KEY (HOBBY_CODE) REFERENCES Hobby(HOBBY_CODE)
+);
