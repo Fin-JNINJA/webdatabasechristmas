@@ -89,3 +89,9 @@ ON DELETE CASCADE);
 -- Please add your table definitions below this line.......
 
 
+CREATE TABLE HOBBY(
+    HOBBY_CODE INT UNSIGNED NOT NULL,
+    Hobby_Name VARCHAR(255) NOT NULL,
+    Hobby_Description VARCHAR(512) NOT NULL,
+    Hobby_Catagory VARCHAR(20)
+)
