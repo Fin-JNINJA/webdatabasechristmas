@@ -119,3 +119,14 @@ CREATE TABLE Club (
     PRIMARY KEY (CLUB_CODE)
 )
 
+CREATE TABLE Phone (
+    PHONE VARCHAR(20) --to account for phone numbers being up to 17 characters then with spaces
+    PRIMARY KEY (CLUB, PHONE),
+    FOREIGN KEY (CLUB) REFERENCES Club(CLUB_CODE)
+)
+
+CREATE TABLE Stu_Club (
+    PRIMARY KEY (URN, CLUB_CODE),
+    FOREIGN KEY URN REFERENCES Student(URN),
+    FOREIGN KEY CLUB_CODE REFERENCES Club(CLUB_CODE)
+)
