@@ -440,7 +440,7 @@
             <mxPoint x="670" y="670" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4JimUWqoRUcmtNCQsQPy-1" value="ACCOMODATION" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+        <mxCell id="4JimUWqoRUcmtNCQsQPy-1" value="ACCOMMODATION" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="140" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="4JimUWqoRUcmtNCQsQPy-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="4JimUWqoRUcmtNCQsQPy-1">
@@ -507,7 +507,7 @@
             <mxPoint x="143" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4JimUWqoRUcmtNCQsQPy-16" value="ACCOMODATION_A" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+        <mxCell id="4JimUWqoRUcmtNCQsQPy-16" value="ACCOMMODATION_A" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
           <mxGeometry x="-160" y="409.5" width="156" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4JimUWqoRUcmtNCQsQPy-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="4JimUWqoRUcmtNCQsQPy-16">
@@ -536,7 +536,7 @@
             <mxRectangle width="126" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4JimUWqoRUcmtNCQsQPy-23" value="ACCOMODATION_B" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+        <mxCell id="4JimUWqoRUcmtNCQsQPy-23" value="ACCOMMODATION_B" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
           <mxGeometry y="409.5" width="124" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4JimUWqoRUcmtNCQsQPy-24" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="4JimUWqoRUcmtNCQsQPy-23">
@@ -583,7 +583,7 @@
             <mxPoint x="60" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4JimUWqoRUcmtNCQsQPy-34" value="ACCOMODATION_EXT" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+        <mxCell id="4JimUWqoRUcmtNCQsQPy-34" value="ACCOMMODATION_EXT" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="409.5" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4JimUWqoRUcmtNCQsQPy-35" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="4JimUWqoRUcmtNCQsQPy-34">
