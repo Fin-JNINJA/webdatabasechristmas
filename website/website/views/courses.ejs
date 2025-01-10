@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <%- include('header') %>
+        <table>
+            <tr>
+                <td>Course Code</td>
+                <td>Course Title</td>
+                <td>Enrollment</td>
+            </tr>
+            <tr>
+                <% courses.forEach(course => { %>
+                    <tr>
+                        <td>
+                            <%= course.Crs_Code %>
+                        </td>
+                        <td>
+                            <%= course.Crs_Title %>
+                        </td>
+                        <td>
+                            <%= course.Crs_Enrollment %>
+                        </td>
+                        <td>
+                            <a href="/edit-course/<%= course.Crs_Code %>">
+                                edit
+                            </a>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tr>
+        </table>
+    </body>
+</html>

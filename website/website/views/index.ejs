@@ -1,7 +1,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
     </head>
 <body>
     <%- include('header') %>
@@ -9,28 +9,42 @@
 <div class="container">
   <div>
     <h2>
-        Total Courses
+        Total Courses:
     </h2>
+    <h3>
+        <%= totalcourses %>
+    </h3>
   </div>
   <div>
     <h2>
-        Total Courses
+        Total Enrollments: 
     </h2>
+    <h3><%= totalenrollment %></h3>
+
   </div>
   <div>
     <h2>
-        Total Courses
+        Average Enrollments 
     </h2>
+    <h3>
+        <%= averageenrollments %>
+    </h3>
   </div>  
   <div>
     <h2>
-        Total Courses
+        Highest Enrollments 
     </h2>
+    <h3>
+        <%= highestenrollments %>
+    </h3>
   </div>
   <div>
     <h2>
-        Total Courses
+        Lowest Enrollments 
     </h2>
+    <h3>
+        <%= lowestenrollments %>
+    </h3>
   </div>
 </div>
 

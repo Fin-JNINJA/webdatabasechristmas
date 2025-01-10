@@ -88,6 +88,7 @@ ON DELETE CASCADE);
 
 -- Please add your table definitions below this line.......
 
+-- add drop tableeebee
 
 CREATE TABLE Hobby(
     HOBBY_CODE INT UNSIGNED NOT NULL,

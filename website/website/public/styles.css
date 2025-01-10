@@ -1,11 +1,22 @@
-h1{
+h1, h2, h3{
     text-align: center;
 }
-h2{
-    text-align: center;
+a{
+    color: rgb(80, 13, 143);
 }
 .container {
+    position: relative;
+    width: min(1000px, 90%);
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
-    background-color: red;
-    padding: 10px;}
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+}
+.header{
+    background-color: rgb(131, 131, 131);
+    padding: 10px;
+}
+form{
+    margin: 10px 0 0 0;
+}

@@ -53,26 +53,59 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Add your code here
 
 app.get('/', async (req, res) => {
-	res.render('index');
+	const totalcourses = await connection.query("SELECT COUNT(*) as count FROM coursework.course;");
+	const totalenrollment = await connection.query("SELECT SUM(Crs_Enrollment) as sum FROM coursework.course;");
+	const averageenrollments = await connection.query("SELECT AVG(Crs_Enrollment) as avg FROM coursework.course;");
+	const highestenrollments = await connection.query("SELECT Crs_Title as title FROM coursework.course WHERE Crs_Enrollment=(SELECT MAX(Crs_Enrollment) FROM coursework.course);");
+	const lowestenrollments = await connection.query("SELECT Crs_Title as title FROM coursework.course WHERE Crs_Enrollment=(SELECT MIN(Crs_Enrollment) FROM coursework.course);");
+	res.render('index',{
+		totalcourses:totalcourses[0].count,
+		totalenrollment:totalenrollment[0].sum,
+		averageenrollments:averageenrollments[0].avg,
+		highestenrollments:highestenrollments[0].title,
+		lowestenrollments:lowestenrollments[0].title
+	});
 });
 
 app.get('/courses', async (req, res) => {
-	res.send('Hello Courses');
+	const courses = await connection.query("SELECT * FROM coursework.course")
+	res.render('courses',{
+		courses:courses
+	});
 });
 
 // need to get id info
 app.get('/edit-course/:id', async (req, res) => { 
-	res.send('/edit-course/:id');
+	res.render('edit', {
+		error:false
+	});
 });
 
 app.get('/create-course', async (req, res) => {
-	res.send('Hello Create course');
+	res.render('create');
 });
 
 app.post('/create-course')
 
 // need to get id info
-app.post('/edit-course')
+app.post('/edit-course/:id', async (req, res) => {
+	const data = req.body
+	if(data.Crs_Title != "" && !(10 <= data.Crs_Title.length) && !(data.Crs_Title.length <= 250) && data.Crs_Enrollment != "" && !isNaN(data.Crs_Enrollment) && !( 0 <= data.Crs_Enrollment) && !(data.Crs_Enrollment <= 10000)){
+		res.render("edit", {
+			error:true
+		})
+		return
+	} 
+	try{
+		await connection.query("UPDATE coursework.course SET ? WHERE Crs_Code = ?",
+			[data, req.params.id]
+		)
+	} catch {
+		res.render("edit", {
+			error:true
+		})
+	}
+})
 
 
 /**
