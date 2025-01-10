@@ -53,14 +53,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Add your code here
 
 app.get('/', async (req, res) => {
-	res.send('Hello World');
+	res.render('index');
 });
 
 app.get('/courses', async (req, res) => {
 	res.send('Hello Courses');
 });
 
-app.get('/edit-course/:id', async (req, res) => {
+// need to get id info
+app.get('/edit-course/:id', async (req, res) => { 
 	res.send('/edit-course/:id');
 });
 
@@ -68,6 +69,10 @@ app.get('/create-course', async (req, res) => {
 	res.send('Hello Create course');
 });
 
+app.post('/create-course')
+
+// need to get id info
+app.post('/edit-course')
 
 
 /**
