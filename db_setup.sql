@@ -120,7 +120,7 @@ CREATE TABLE Club (
 )
 
 CREATE TABLE Phone (
-    PHONE VARCHAR(20) --to account for phone numbers being up to 17 characters then with spaces
+    PHONE VARCHAR(20) NOT NULL,--to account for phone numbers being up to 17 characters then with spaces
     PRIMARY KEY (CLUB, PHONE),
     FOREIGN KEY (CLUB) REFERENCES Club(CLUB_CODE)
 )
@@ -129,4 +129,29 @@ CREATE TABLE Stu_Club (
     PRIMARY KEY (URN, CLUB_CODE),
     FOREIGN KEY URN REFERENCES Student(URN),
     FOREIGN KEY CLUB_CODE REFERENCES Club(CLUB_CODE)
+)
+
+CREATE TABLE Accommodation (
+    ACCOM_ID INT UNSIGNED NOT NULL,
+    Acc_Address VARCHAR(255) NOT NULL,
+    Acc_Rent MONEY NOT NULL,
+    PRIMARY KEY (ACCOM_ID)
+)
+
+CREATE TABLE Accommodation_A(
+    Acc_Parking_Address VARCHAR(255),
+    PRIMARY KEY (ACCOM_ID),
+    FOREIGN KEY ACCOM_ID REFERENCES Accommodation (ACCOM_ID)
+)
+
+CREATE TABLE Accommodation_B(
+    ACCOM_ID VARCHAR(255),
+    PRIMARY KEY (ACCOM_ID),
+    FOREIGN KEY ACCOM_ID REFERENCES Accommodation (ACCOM_ID)
+)
+
+CREATE TABLE Accommodation_EXT(
+    Acc_Landlord_Phone VARCHAR(20),
+    PRIMARY KEY (ACCOM_ID),
+    FOREIGN KEY ACCOM_ID REFERENCES Accommodation (ACCOM_ID)
 )
