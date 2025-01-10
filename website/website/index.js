@@ -13,7 +13,7 @@ const bodyParser = require('body-parser');
 const PORT = 8000;
 const DB_HOST = 'localhost';
 const DB_USER = 'root';
-const DB_PASSWORD = 'password';
+const DB_PASSWORD = '';
 const DB_NAME = 'coursework';
 const DB_PORT = 3306;
 
@@ -56,10 +56,17 @@ app.get('/', async (req, res) => {
 	res.send('Hello World');
 });
 
+app.get('/courses', async (req, res) => {
+	res.send('Hello Courses');
+});
 
+app.get('/edit-course/:id', async (req, res) => {
+	res.send('/edit-course/:id');
+});
 
-
-
+app.get('/create-course', async (req, res) => {
+	res.send('Hello Create course');
+});
 
 
 
