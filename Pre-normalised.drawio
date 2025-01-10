@@ -423,7 +423,7 @@
             <mxRectangle width="50" height="25" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sClYBlrSlswbs2nCf-e8-6" value="Club_Phone" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="sClYBlrSlswbs2nCf-e8-4" vertex="1">
+        <mxCell id="sClYBlrSlswbs2nCf-e8-6" value="Club_Phones" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="sClYBlrSlswbs2nCf-e8-4" vertex="1">
           <mxGeometry x="50" width="120" height="25" as="geometry">
             <mxRectangle width="120" height="25" as="alternateBounds" />
           </mxGeometry>
